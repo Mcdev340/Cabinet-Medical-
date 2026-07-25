@@ -1,3 +1,5 @@
+"use client";
+
 import { FormEvent, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { CheckCircle2, AlertCircle, Loader2 } from "lucide-react";

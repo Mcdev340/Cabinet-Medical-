@@ -34,3 +34,35 @@ export interface AppointmentFormData {
   motif: string;
   creneauSouhaite: string;
 }
+
+export interface TimelineEvent {
+  annee: string;
+  titre: string;
+  description: string;
+}
+
+export interface Valeur {
+  titre: string;
+  description: string;
+  icone: string;
+}
+
+export type HealthCategory =
+  | "prevention"
+  | "maladies-courantes"
+  | "nutrition"
+  | "sante-femme"
+  | "sante-enfant"
+  | "coeur";
+
+export interface HealthArticle {
+  slug: string;
+  titre: string;
+  extrait: string;
+  categorie: HealthCategory;
+  auteurSlug: string;
+  dureeLecture: string;
+  datePublication: string;
+  contenu: { titre?: string; paragraphes: string[] }[];
+  motsCles: string[];
+}

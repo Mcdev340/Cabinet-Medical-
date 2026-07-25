@@ -22,6 +22,15 @@ export default function Footer() {
           <Link href="/services" className="text-sm text-white/85 hover:text-white">
             Nos services
           </Link>
+          <Link href="/a-propos" className="text-sm text-white/85 hover:text-white">
+            À propos
+          </Link>
+          <Link
+            href="/a-propos/bibliotheque-sante"
+            className="text-sm text-white/85 hover:text-white"
+          >
+            Bibliothèque de santé
+          </Link>
           <Link href="/rendez-vous" className="text-sm text-white/85 hover:text-white">
             Prendre rendez-vous
           </Link>
