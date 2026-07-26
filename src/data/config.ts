@@ -4,14 +4,16 @@
 // à remplacer avant mise en production — voir le README, section "Mettre à jour le contenu".
 
 export const siteConfig = {
-  cabinetNom: process.env.NEXT_PUBLIC_CABINET_NOM || "Cabinet Médical Teranga",
+  cabinetNom: process.env.NEXT_PUBLIC_CABINET_NOM || "Cabinet Yaye Fatou",
   cabinetAccroche:
     process.env.NEXT_PUBLIC_CABINET_ACCROCHE ||
     "Votre santé, notre priorité — un accueil chaleureux, des soins de confiance.",
 
-  telephoneSecretariat: process.env.NEXT_PUBLIC_TELEPHONE_SECRETARIAT || "+221 33 800 12 34",
+  telephoneSecretariat:
+    process.env.NEXT_PUBLIC_TELEPHONE_SECRETARIAT || "+221 33 800 12 34",
   whatsappNumero: process.env.NEXT_PUBLIC_WHATSAPP_NUMERO || "221771234567",
-  emailContact: process.env.NEXT_PUBLIC_EMAIL_CONTACT || "contact@cabinet-teranga.sn",
+  emailContact:
+    process.env.NEXT_PUBLIC_EMAIL_CONTACT || "contact@cabinet-yayefatou.sn",
 
   adresse: {
     ligne1: process.env.NEXT_PUBLIC_ADRESSE_LIGNE1 || "Rue 10 x Corniche Ouest",
@@ -26,7 +28,8 @@ export const siteConfig = {
   ],
 
   acces: {
-    transport: "Arrêt de bus « Point E » à 3 min à pied, lignes BRT et Dakar Dem Dikk.",
+    transport:
+      "Arrêt de bus « Point E » à 3 min à pied, lignes BRT et Dakar Dem Dikk.",
     parking: "Parking gratuit disponible devant le cabinet.",
   },
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
@@ -27,8 +28,17 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-white/90 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 sm:px-8 lg:px-10">
-        <Link href="/" className="font-heading text-lg font-semibold text-primary">
-          {siteConfig.cabinetNom}
+        <Link href="/" className="inline-flex items-center gap-3">
+          <Image
+            src="/logo.png"
+            alt={siteConfig.cabinetNom}
+            width={44}
+            height={44}
+            className="rounded-md object-contain"
+          />
+          <span className="font-heading text-lg font-semibold text-primary">
+            {siteConfig.cabinetNom}
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -39,7 +49,9 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 className={`text-sm font-medium transition-colors ${
-                  isActive ? "text-accent-dark" : "text-ink-soft hover:text-primary"
+                  isActive
+                    ? "text-accent-dark"
+                    : "text-ink-soft hover:text-primary"
                 }`}
               >
                 {link.label}
@@ -55,7 +67,9 @@ export default function Header() {
             <Link
               href="/a-propos"
               className={`inline-flex items-center gap-1 text-sm font-medium transition-colors ${
-                isAboutSection ? "text-accent-dark" : "text-ink-soft hover:text-primary"
+                isAboutSection
+                  ? "text-accent-dark"
+                  : "text-ink-soft hover:text-primary"
               }`}
             >
               À propos
@@ -88,7 +102,9 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 className={`text-sm font-medium transition-colors ${
-                  isActive ? "text-accent-dark" : "text-ink-soft hover:text-primary"
+                  isActive
+                    ? "text-accent-dark"
+                    : "text-ink-soft hover:text-primary"
                 }`}
               >
                 {link.label}

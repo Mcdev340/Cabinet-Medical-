@@ -18,13 +18,6 @@ export default function RootLayout({
   return (
     <html lang="fr" className="h-full">
       <head>
-        {/*
-          Polices Google Fonts chargées via balises <link> (plutôt que next/font)
-          afin de ne dépendre d'aucun accès réseau au moment du build — voir le
-          README pour la marche à suivre si vous préférez les auto-héberger avec next/font.
-          Le layout racine de l'App Router est l'équivalent de pages/_document.js ;
-          la règle ci-dessous ne le reconnaît pas encore, d'où le disable ciblé.
-        */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}

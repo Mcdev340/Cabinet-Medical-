@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, Clock, UserRound, CalendarDays } from "lucide-react";
 import { ButtonLink } from "@/components/ui/Button";
 import Avatar from "@/components/ui/Avatar";
+import { CategoryIllustration } from "@/components/illustrations";
 import {
   getHealthArticleBySlug,
   getCategoryLabel,
@@ -52,6 +53,8 @@ export default async function HealthArticlePage({ params }: { params: Params }) 
         <ArrowLeft size={16} strokeWidth={1.75} />
         Retour à la bibliothèque
       </Link>
+
+      <CategoryIllustration category={article.categorie} className="h-44 sm:h-52" />
 
       <header className="flex flex-col gap-4">
         <span className="w-fit rounded-full bg-accent-soft px-3 py-1 text-xs font-semibold text-accent-dark">

@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { MapPin, Clock, Car, Bus, Phone, Mail } from "lucide-react";
 import Container from "@/components/ui/Container";
-import SectionTitle from "@/components/ui/SectionTitle";
+import PageBanner from "@/components/ui/PageBanner";
+import Reveal from "@/components/ui/Reveal";
 import { ButtonLink } from "@/components/ui/Button";
 import { siteConfig, whatsappLink } from "@/data/config";
+import { ClinicBuildingIllustration } from "@/components/illustrations";
 
 export const metadata: Metadata = {
   title: `Contact & localisation — ${siteConfig.cabinetNom}`,
@@ -14,14 +16,17 @@ export default function ContactPage() {
   return (
     <div className="py-16 sm:py-20">
       <Container className="flex flex-col gap-10">
-        <SectionTitle
-          eyebrow="Contact & localisation"
-          title="Venez nous rencontrer"
-          description="Une question, un empêchement, une urgence ? Contactez-nous par téléphone, e-mail ou WhatsApp — ou passez directement au cabinet."
-        />
+        <Reveal>
+          <PageBanner
+            eyebrow="Contact & localisation"
+            title="Venez nous rencontrer"
+            description="Une question, un empêchement, une urgence ? Contactez-nous par téléphone, e-mail ou WhatsApp — ou passez directement au cabinet."
+            illustration={<ClinicBuildingIllustration className="h-auto w-full" />}
+          />
+        </Reveal>
 
         <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
-          <div className="flex flex-col gap-6">
+          <Reveal variant="left" className="flex flex-col gap-6">
             <div className="flex flex-col gap-4 rounded-card border border-line bg-surface p-6">
               <h2 className="font-heading text-lg font-semibold text-primary">Adresse</h2>
               <p className="flex items-start gap-3 text-sm text-ink-soft">
@@ -86,9 +91,9 @@ export default function ContactPage() {
                 </ButtonLink>
               </div>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="overflow-hidden rounded-card border border-line shadow-sm lg:sticky lg:top-24">
+          <Reveal variant="right" delay={100} className="overflow-hidden rounded-card border border-line shadow-sm lg:sticky lg:top-24">
             <iframe
               src={siteConfig.googleMapsEmbedUrl}
               width="100%"
@@ -99,7 +104,7 @@ export default function ContactPage() {
               referrerPolicy="no-referrer-when-downgrade"
               title={`Localisation ${siteConfig.cabinetNom}`}
             />
-          </div>
+          </Reveal>
         </div>
       </Container>
     </div>
