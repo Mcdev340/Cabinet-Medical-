@@ -19,7 +19,7 @@ export default function ServicesPreview() {
         </Reveal>
 
         <div className="stagger-children grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => (
+          {services.slice(0, 6).map((service) => (
             <ServiceCard key={service.slug} service={service} />
           ))}
         </div>

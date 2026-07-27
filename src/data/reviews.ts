@@ -43,6 +43,62 @@ export const reviews: Review[] = [
       "Réponse rapide sur WhatsApp pour une question urgente. On sent une vraie disponibilité.",
     date: "Avril 2026",
   },
+  {
+    id: "6",
+    nom: "Nadia M.",
+    note: 5,
+    commentaire:
+      "Le personnel est très à l'écoute et les explications sont claires. J'ai eu un excellent suivi.",
+    date: "Juin 2026",
+  },
+  {
+    id: "7",
+    nom: "Ibrahima K.",
+    note: 5,
+    commentaire:
+      "Très bon cabinet, prise en charge professionnelle et rapide. Je recommande sans hésiter.",
+    date: "Juin 2026",
+  },
+  {
+    id: "8",
+    nom: "Fatou N.",
+    note: 5,
+    commentaire:
+      "Les rendez-vous sont bien organisés et l'équipe est toujours disponible pour répondre aux questions.",
+    date: "Juillet 2026",
+  },
+  {
+    id: "9",
+    nom: "Moussa C.",
+    note: 4,
+    commentaire:
+      "Service agréable et professionnel. J'ai eu un peu d'attente, mais l'accueil est impeccable.",
+    date: "Juillet 2026",
+  },
+  {
+    id: "10",
+    nom: "Sokhna L.",
+    note: 5,
+    commentaire:
+      "Ma visite s'est très bien passée, tout est simple, clair et rassurant.",
+    date: "Juillet 2026",
+  },
+  {
+    id: "11",
+    nom: "Djibril P.",
+    note: 5,
+    commentaire:
+      "Très bon rapport qualité/prix et un vrai professionnalisme au quotidien.",
+    date: "Août 2026",
+  },
+  {
+    id: "12",
+    nom: "Awa G.",
+    note: 4,
+    commentaire:
+      "J'ai apprécié la disponibilité et les conseils donnés pour mieux gérer ma santé.",
+    date: "Août 2026",
+  },
 ];
 
 export function averageRating(): number {
