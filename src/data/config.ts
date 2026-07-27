@@ -11,7 +11,7 @@ export const siteConfig = {
 
   telephoneSecretariat:
     process.env.NEXT_PUBLIC_TELEPHONE_SECRETARIAT || "+221 33 800 12 34",
-  whatsappNumero: process.env.NEXT_PUBLIC_WHATSAPP_NUMERO || "221771234567",
+  whatsappNumero: process.env.NEXT_PUBLIC_WHATSAPP_NUMERO || "221 77 123 45 67",
   emailContact:
     process.env.NEXT_PUBLIC_EMAIL_CONTACT || "contact@cabinet-yayefatou.sn",
 

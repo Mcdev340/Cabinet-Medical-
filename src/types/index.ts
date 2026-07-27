@@ -8,6 +8,7 @@ export interface Doctor {
   joursConsultation: string[];
   bio: string;
   initiales: string;
+  photo?: string;
 }
 
 export interface Service {

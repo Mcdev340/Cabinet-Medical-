@@ -37,7 +37,8 @@ export const services: Service[] = [
   {
     slug: "gynecologie",
     titre: "Gynécologie",
-    description: "Suivi gynécologique, contraception et consultations prénatales.",
+    description:
+      "Suivi gynécologique, contraception et consultations prénatales.",
     dureeMoyenne: "30 min",
     icone: "Flower2",
   },
@@ -48,6 +49,30 @@ export const services: Service[] = [
       "Prélèvements et bilans biologiques réalisés sur place, résultats sous 48h.",
     dureeMoyenne: "15 min",
     icone: "FlaskConical",
+  },
+  {
+    slug: "vaccinations",
+    titre: "Vaccinations",
+    description:
+      "Vaccins recommandés et rappels pour adultes et enfants, avec suivi personnalisé.",
+    dureeMoyenne: "20 min",
+    icone: "Syringe",
+  },
+  {
+    slug: "soins-durgence",
+    titre: "Soins d'urgence",
+    description:
+      "Prise en charge rapide des traumatismes légers, douleurs aiguës et urgences médicales bénignes.",
+    dureeMoyenne: "20 min",
+    icone: "Activity",
+  },
+  {
+    slug: "depistage-prevention",
+    titre: "Dépistage & prévention",
+    description:
+      "Bilan préventif, dépistage des facteurs de risque et conseils santé personnalisés.",
+    dureeMoyenne: "25 min",
+    icone: "ShieldCheck",
   },
 ];
 
