@@ -40,9 +40,9 @@ export const siteConfig = {
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.0!2d-17.4676!3d14.7167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDQzJzAwLjEiTiAxN8KwMjgnMDMuNCJX!5e0!3m2!1sfr!2ssn!4v0000000000000",
 
   emailjs: {
-    serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
-    templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
-    publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "",
+    serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_pspviev",
+    templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "template_9gjecpf",
+    publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "qJCmf6mtfSPIOw3T_",
   },
 
   reseaux: {

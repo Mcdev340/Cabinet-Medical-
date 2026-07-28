@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import type { Metadata } from "next";
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
@@ -16,7 +17,6 @@ export default function AvisPage() {
     <div className="py-16 sm:py-20">
       <Container className="flex flex-col gap-10">
         <SectionTitle
-          eyebrow={`${averageRating()}/5 · ${reviews.length} avis`}
           title="La confiance de nos patients"
           description="Ces témoignages sont partagés par des patients ayant consulté au cabinet. Ils sont actuellement gérés manuellement et pourront évoluer vers un affichage dynamique (Google Reviews)."
         />
@@ -33,7 +33,8 @@ export default function AvisPage() {
               Vous avez été suivi au cabinet ?
             </h2>
             <p className="max-w-md text-sm text-ink-soft">
-              Partagez votre expérience en nous contactant directement par WhatsApp.
+              Partagez votre expérience en nous contactant directement par
+              WhatsApp.
             </p>
             <ButtonLink href="/contact">Nous contacter</ButtonLink>
           </div>
