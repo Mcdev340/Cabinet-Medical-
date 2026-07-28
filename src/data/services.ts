@@ -9,6 +9,7 @@ export const services: Service[] = [
       "Bilan de santé, suivi courant et orientation vers le bon spécialiste si besoin.",
     dureeMoyenne: "20 min",
     icone: "Stethoscope",
+    image: "/Consultation%20general.png",
   },
   {
     slug: "pediatrie",
@@ -17,6 +18,7 @@ export const services: Service[] = [
       "Suivi de croissance, vaccinations et consultations pour les enfants de 0 à 15 ans.",
     dureeMoyenne: "25 min",
     icone: "Baby",
+    image: "/Pediatrie.png",
   },
   {
     slug: "cardiologie",
@@ -25,6 +27,7 @@ export const services: Service[] = [
       "Bilan cardiovasculaire, électrocardiogramme et suivi des pathologies chroniques.",
     dureeMoyenne: "30 min",
     icone: "HeartPulse",
+    image: "/Cardiologe.png",
   },
   {
     slug: "dermatologie",
@@ -33,6 +36,7 @@ export const services: Service[] = [
       "Diagnostic et traitement des affections de la peau, des cheveux et des ongles.",
     dureeMoyenne: "20 min",
     icone: "Sparkles",
+    image: "/Dermatologie.png",
   },
   {
     slug: "gynecologie",
@@ -73,6 +77,15 @@ export const services: Service[] = [
       "Bilan préventif, dépistage des facteurs de risque et conseils santé personnalisés.",
     dureeMoyenne: "25 min",
     icone: "ShieldCheck",
+  },
+  {
+    slug: "dentisterie",
+    titre: "Dentisterie",
+    description:
+      "Soins dentaires, détartrage, traitement des caries et prothèses dentaires avec Dr Karine Ndiaye.",
+    dureeMoyenne: "30 min",
+    icone: "Tooth",
+    image: "/Dentiserie.png",
   },
 ];
 

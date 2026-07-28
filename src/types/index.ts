@@ -16,7 +16,8 @@ export interface Service {
   titre: string;
   description: string;
   dureeMoyenne: string;
-  icone: string;
+  icone?: string;
+  image?: string;
 }
 
 export interface Review {

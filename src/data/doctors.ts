@@ -51,16 +51,17 @@ export const doctors: Doctor[] = [
   {
     slug: "dr-ibrahima-kane",
     nom: "Dr Ibrahima Kane",
-    specialite: "Dermatologie",
-    anneesExperience: 8,
+    specialite: "Dermatologie et soins de la peau",
+    anneesExperience: 10,
     langues: ["Français", "Wolof", "Anglais"],
     diplomes: [
       "Doctorat en Médecine, Université Cheikh Anta Diop de Dakar",
       "DES de Dermatologie et Vénérologie",
+      "Formation continue en dermatoscopie et prise en charge des affections cutanées",
     ],
-    joursConsultation: ["Lundi", "Jeudi", "Vendredi"],
-    bio: "Le Dr Kane traite les affections de la peau les plus courantes comme les cas plus complexes, avec un souci constant du confort du patient.",
-    photo: "/Dr%20Ibrahima%20Kane.png",
+    joursConsultation: ["Lundi", "Mercredi", "Vendredi"],
+    bio: "Le Dr Ibrahima Kane accompagne ses patients dans le diagnostic et le traitement des affections cutanées avec un suivi attentif, des soins adaptés et un accompagnement personnalisé.",
+    photo: "/Dr%20Ibrahima%20kane.png",
     initiales: "IK",
   },
   {
