@@ -9,13 +9,15 @@ import {
 import SectionTitle from "@/components/ui/SectionTitle";
 import Reveal from "@/components/ui/Reveal";
 import IllustrationFrame from "@/components/ui/IllustrationFrame";
+import { ButtonLink } from "@/components/ui/Button";
 import { siteConfig } from "@/data/config";
 import { missionText, visionText, valeurs } from "@/data/about";
 import { MedicalTeamIllustration } from "@/components/illustrations";
 
 export const metadata: Metadata = {
   title: `Mission & vision — ${siteConfig.cabinetNom}`,
-  description: "Notre mission, notre vision et les valeurs qui guident notre pratique médicale.",
+  description:
+    "Notre mission, notre vision et les valeurs qui guident notre pratique médicale.",
 };
 
 const iconMap: Record<string, LucideIcon> = {
@@ -28,6 +30,12 @@ const iconMap: Record<string, LucideIcon> = {
 export default function MissionVisionPage() {
   return (
     <>
+      <div className="mb-8 flex justify-start">
+        <ButtonLink href="/a-propos" variant="ghost">
+          Retour à la page À propos
+        </ButtonLink>
+      </div>
+
       <div className="grid items-center gap-8 lg:grid-cols-[1fr_auto]">
         <Reveal>
           <SectionTitle
@@ -48,19 +56,25 @@ export default function MissionVisionPage() {
           <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">
             Notre mission
           </span>
-          <p className="text-base leading-relaxed text-ink-soft">{missionText}</p>
+          <p className="text-base leading-relaxed text-ink-soft">
+            {missionText}
+          </p>
         </div>
         <div className="card-lift flex flex-col gap-4 rounded-card border border-line bg-surface p-8">
           <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">
             Notre vision
           </span>
-          <p className="text-base leading-relaxed text-ink-soft">{visionText}</p>
+          <p className="text-base leading-relaxed text-ink-soft">
+            {visionText}
+          </p>
         </div>
       </div>
 
       <Reveal>
         <div>
-          <h2 className="font-heading text-xl font-semibold text-primary">Nos valeurs</h2>
+          <h2 className="font-heading text-xl font-semibold text-primary">
+            Nos valeurs
+          </h2>
           <div className="stagger-children mt-6 grid gap-6 sm:grid-cols-2">
             {valeurs.map((valeur) => {
               const Icon = iconMap[valeur.icone] || HeartHandshake;
@@ -75,7 +89,9 @@ export default function MissionVisionPage() {
                   <h3 className="font-heading text-lg font-semibold text-primary">
                     {valeur.titre}
                   </h3>
-                  <p className="text-sm leading-relaxed text-ink-soft">{valeur.description}</p>
+                  <p className="text-sm leading-relaxed text-ink-soft">
+                    {valeur.description}
+                  </p>
                 </div>
               );
             })}

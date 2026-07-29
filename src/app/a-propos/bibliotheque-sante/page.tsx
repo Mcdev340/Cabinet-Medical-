@@ -3,6 +3,7 @@ import { BookOpenCheck, Clock, ShieldCheck } from "lucide-react";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Reveal from "@/components/ui/Reveal";
 import IllustrationFrame from "@/components/ui/IllustrationFrame";
+import { ButtonLink } from "@/components/ui/Button";
 import HealthLibraryExplorer from "@/components/about/HealthLibraryExplorer";
 import { siteConfig } from "@/data/config";
 import { healthArticles } from "@/data/healthLibrary";
@@ -17,6 +18,12 @@ export const metadata: Metadata = {
 export default function BibliothequeSantePage() {
   return (
     <>
+      <div className="mb-8 flex justify-start">
+        <ButtonLink href="/a-propos" variant="ghost">
+          Retour à la page À propos
+        </ButtonLink>
+      </div>
+
       <div className="relative overflow-hidden rounded-card border border-line bg-surface px-8 py-10">
         <div className="blob-primary animate-blob-drift pointer-events-none absolute inset-0 opacity-50" />
 
@@ -30,15 +37,27 @@ export default function BibliothequeSantePage() {
               />
               <div className="flex flex-col gap-3">
                 <span className="flex items-center gap-2 text-sm text-ink-soft">
-                  <BookOpenCheck size={18} strokeWidth={1.75} className="text-accent-dark" />
+                  <BookOpenCheck
+                    size={18}
+                    strokeWidth={1.75}
+                    className="text-accent-dark"
+                  />
                   {healthArticles.length} articles disponibles
                 </span>
                 <span className="flex items-center gap-2 text-sm text-ink-soft">
-                  <Clock size={18} strokeWidth={1.75} className="text-accent-dark" />
+                  <Clock
+                    size={18}
+                    strokeWidth={1.75}
+                    className="text-accent-dark"
+                  />
                   Accessible 24h/24, 7j/7
                 </span>
                 <span className="flex items-center gap-2 text-sm text-ink-soft">
-                  <ShieldCheck size={18} strokeWidth={1.75} className="text-accent-dark" />
+                  <ShieldCheck
+                    size={18}
+                    strokeWidth={1.75}
+                    className="text-accent-dark"
+                  />
                   Validés par nos praticiens
                 </span>
               </div>
@@ -59,10 +78,10 @@ export default function BibliothequeSantePage() {
 
       <Reveal>
         <div className="rounded-card border border-accent/20 bg-accent-soft px-6 py-5 text-sm text-ink-soft">
-          <strong className="text-primary">Avertissement :</strong> ces contenus sont
-          informatifs et ne remplacent pas une consultation médicale. En cas de symptômes
-          persistants ou d&rsquo;urgence, contactez votre médecin ou les services
-          d&rsquo;urgence.
+          <strong className="text-primary">Avertissement :</strong> ces contenus
+          sont informatifs et ne remplacent pas une consultation médicale. En
+          cas de symptômes persistants ou d&rsquo;urgence, contactez votre
+          médecin ou les services d&rsquo;urgence.
         </div>
       </Reveal>
     </>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Reveal from "@/components/ui/Reveal";
 import IllustrationFrame from "@/components/ui/IllustrationFrame";
+import { ButtonLink } from "@/components/ui/Button";
 import { siteConfig } from "@/data/config";
 import { timelineEvents } from "@/data/about";
 import { ClinicBuildingIllustration } from "@/components/illustrations";
@@ -14,6 +15,12 @@ export const metadata: Metadata = {
 export default function HistoirePage() {
   return (
     <>
+      <div className="mb-8 flex justify-start">
+        <ButtonLink href="/a-propos" variant="ghost">
+          Retour à la page À propos
+        </ButtonLink>
+      </div>
+
       <div className="grid items-center gap-8 lg:grid-cols-[1fr_auto]">
         <Reveal>
           <SectionTitle
@@ -28,7 +35,6 @@ export default function HistoirePage() {
           </IllustrationFrame>
         </Reveal>
       </div>
-
       <div className="relative flex flex-col gap-0">
         {timelineEvents.map((event, index) => (
           <Reveal key={event.annee} delay={index * 80}>
@@ -40,9 +46,15 @@ export default function HistoirePage() {
                 {index + 1}
               </div>
               <div className="card-lift flex flex-1 flex-col gap-2 rounded-card border border-line bg-surface p-6">
-                <span className="text-sm font-semibold text-accent-dark">{event.annee}</span>
-                <h2 className="font-heading text-lg font-semibold text-primary">{event.titre}</h2>
-                <p className="text-sm leading-relaxed text-ink-soft">{event.description}</p>
+                <span className="text-sm font-semibold text-accent-dark">
+                  {event.annee}
+                </span>
+                <h2 className="font-heading text-lg font-semibold text-primary">
+                  {event.titre}
+                </h2>
+                <p className="text-sm leading-relaxed text-ink-soft">
+                  {event.description}
+                </p>
               </div>
             </div>
           </Reveal>

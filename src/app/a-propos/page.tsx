@@ -20,43 +20,47 @@ const highlights = [
     href: "/a-propos/histoire",
     icon: History,
     titre: "Notre histoire",
-    description: "De l\u2019ouverture du cabinet à aujourd\u2019hui, un parcours au service de la communauté.",
+    description:
+      "De l\u2019ouverture du cabinet à aujourd\u2019hui, un parcours au service de la communauté.",
   },
   {
     href: "/a-propos/mission-vision",
     icon: Target,
     titre: "Mission & vision",
-    description: "Nos valeurs, notre engagement et la vision qui guide chaque consultation.",
+    description:
+      "Nos valeurs, notre engagement et la vision qui guide chaque consultation.",
   },
   {
     href: "/a-propos/bibliotheque-sante",
     icon: BookOpen,
     titre: "Bibliothèque de santé",
-    description: "Articles validés par nos médecins — comme un conseil médical disponible 24h/24.",
+    description:
+      "Articles validés par nos médecins — comme un conseil médical disponible 24h/24.",
   },
 ];
 
 export default function AboutPage() {
   return (
     <>
-      <div className="relative overflow-hidden rounded-card bg-primary px-8 py-12 text-white sm:px-12 sm:py-16">
+      <div className="relative overflow-hidden rounded-card bg-primary-soft px-8 py-12 text-ink sm:px-12 sm:py-16">
         <div className="blob-accent animate-blob-drift pointer-events-none absolute inset-0 opacity-40" />
 
         <div className="relative grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="flex flex-col gap-6">
-            <span className="text-sm font-semibold uppercase tracking-wide text-white/70">
+            <span className="text-sm font-semibold uppercase tracking-wide text-primary/70">
               À propos de nous
             </span>
-            <h1 className="font-heading text-3xl font-semibold text-white sm:text-4xl">
+            <h1 className="font-heading text-3xl font-semibold text-primary-dark sm:text-4xl">
               Votre santé mérite des soins et des réponses de confiance
             </h1>
-            <p className="text-base leading-relaxed text-white/85">
-              {siteConfig.cabinetNom} accompagne les familles de Dakar depuis plus de
-              quinze ans. Au-delà des consultations, nous mettons à votre disposition une
-              bibliothèque de santé rédigée par nos praticiens — pour vous informer, vous
-              rassurer et vous orienter, à toute heure.
+            <p className="text-base leading-relaxed text-ink-soft">
+              {siteConfig.cabinetNom} accompagne les familles de Dakar depuis
+              plus de quinze ans. Au-delà des consultations, nous mettons à
+              votre disposition une bibliothèque de santé rédigée par nos
+              praticiens — pour vous informer, vous rassurer et vous orienter, à
+              toute heure.
             </p>
-            <div className="flex flex-wrap gap-4 text-sm text-white/80">
+            <div className="flex flex-wrap gap-4 text-sm text-primary/80">
               <span className="flex items-center gap-2">
                 <Clock size={16} strokeWidth={1.75} />
                 Contenus disponibles 24h/24, 7j/7
@@ -97,7 +101,9 @@ export default function AboutPage() {
               <h2 className="font-heading text-lg font-semibold text-primary group-hover:text-accent-dark">
                 {item.titre}
               </h2>
-              <p className="text-sm leading-relaxed text-ink-soft">{item.description}</p>
+              <p className="text-sm leading-relaxed text-ink-soft">
+                {item.description}
+              </p>
             </Link>
           );
         })}
@@ -106,12 +112,20 @@ export default function AboutPage() {
       <Reveal>
         <div className="grid gap-8 rounded-card border border-line bg-surface p-8 sm:grid-cols-2">
           <div className="flex flex-col gap-3">
-            <h2 className="font-heading text-lg font-semibold text-primary">Notre mission</h2>
-            <p className="text-sm leading-relaxed text-ink-soft">{missionText}</p>
+            <h2 className="font-heading text-lg font-semibold text-primary">
+              Notre mission
+            </h2>
+            <p className="text-sm leading-relaxed text-ink-soft">
+              {missionText}
+            </p>
           </div>
           <div className="flex flex-col gap-3">
-            <h2 className="font-heading text-lg font-semibold text-primary">Notre vision</h2>
-            <p className="text-sm leading-relaxed text-ink-soft">{visionText}</p>
+            <h2 className="font-heading text-lg font-semibold text-primary">
+              Notre vision
+            </h2>
+            <p className="text-sm leading-relaxed text-ink-soft">
+              {visionText}
+            </p>
           </div>
         </div>
       </Reveal>
@@ -123,11 +137,13 @@ export default function AboutPage() {
               Une question de santé ?
             </h2>
             <p className="max-w-md text-sm text-ink-soft">
-              Consultez notre bibliothèque de santé ou prenez rendez-vous avec l&rsquo;un de
-              nos médecins pour un avis personnalisé.
+              Consultez notre bibliothèque de santé ou prenez rendez-vous avec
+              l&rsquo;un de nos médecins pour un avis personnalisé.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href="/a-propos/bibliotheque-sante">Bibliothèque de santé</ButtonLink>
+              <ButtonLink href="/a-propos/bibliotheque-sante">
+                Bibliothèque de santé
+              </ButtonLink>
               <ButtonLink href="/rendez-vous" variant="ghost">
                 Prendre rendez-vous
               </ButtonLink>
