@@ -5,7 +5,7 @@ import { Doctor } from "@/types";
 export const doctors: Doctor[] = [
   {
     slug: "dr-awa-diop",
-    nom: "Dr Awa Diop",
+    nom: "Dr Yaye Fatou Sadio",
     specialite: "Médecine générale",
     anneesExperience: 12,
     langues: ["Français", "Wolof", "Anglais"],
@@ -14,9 +14,9 @@ export const doctors: Doctor[] = [
       "DU de Médecine Familiale",
     ],
     joursConsultation: ["Lundi", "Mardi", "Jeudi", "Vendredi"],
-    bio: "Le Dr Diop accompagne les familles du quartier depuis plus de dix ans, avec une attention particulière portée au suivi préventif et au dialogue avec ses patients.",
-    photo: "/Awa%20Diop.png",
-    initiales: "AD",
+    bio: "Le Dr Yaye Fatou Sadioaccompagne les familles du quartier depuis plus de dix ans, avec une attention particulière portée au suivi préventif et au dialogue avec ses patients.",
+    photo: "/Dr%20Yaye%20Fatou.png",
+    initiales: "YFD",
   },
   {
     slug: "dr-moustapha-ndiaye",

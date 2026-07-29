@@ -45,6 +45,7 @@ export const services: Service[] = [
       "Suivi gynécologique, contraception et consultations prénatales.",
     dureeMoyenne: "30 min",
     icone: "Flower2",
+    image: "/gynecologie.png",
   },
   {
     slug: "analyses-bilans",
@@ -53,6 +54,7 @@ export const services: Service[] = [
       "Prélèvements et bilans biologiques réalisés sur place, résultats sous 48h.",
     dureeMoyenne: "15 min",
     icone: "FlaskConical",
+    image: "/Analyses%20&%20bilans.png",
   },
   {
     slug: "vaccinations",
@@ -61,6 +63,7 @@ export const services: Service[] = [
       "Vaccins recommandés et rappels pour adultes et enfants, avec suivi personnalisé.",
     dureeMoyenne: "20 min",
     icone: "Syringe",
+    image: "/Vaccinations.png",
   },
   {
     slug: "soins-durgence",
@@ -69,6 +72,7 @@ export const services: Service[] = [
       "Prise en charge rapide des traumatismes légers, douleurs aiguës et urgences médicales bénignes.",
     dureeMoyenne: "20 min",
     icone: "Activity",
+    image: "/Soins%20d'urgence.png",
   },
   {
     slug: "depistage-prevention",
@@ -77,6 +81,7 @@ export const services: Service[] = [
       "Bilan préventif, dépistage des facteurs de risque et conseils santé personnalisés.",
     dureeMoyenne: "25 min",
     icone: "ShieldCheck",
+    image: "/Dépistage%20&%20prévention.png",
   },
   {
     slug: "dentisterie",
