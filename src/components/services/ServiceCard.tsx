@@ -21,7 +21,7 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 export default function ServiceCard({ service }: { service: Service }) {
-  const Icon = iconMap[service.icone] || Stethoscope;
+  const Icon = iconMap[service.icone ?? ""] || Stethoscope;
 
   return (
     <div className="card-lift group flex flex-col gap-4 overflow-hidden rounded-card border border-line bg-surface">

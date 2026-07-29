@@ -85,7 +85,7 @@ export default function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <ButtonLink href="/rendez-vous" className="!px-5 !py-2.5 text-sm">
+          <ButtonLink href="/rendez-vous" className="px-5! py-2.5! text-sm">
             Prendre rendez-vous
           </ButtonLink>
         </div>
