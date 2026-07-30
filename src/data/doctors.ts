@@ -61,7 +61,7 @@ export const doctors: Doctor[] = [
     ],
     joursConsultation: ["Lundi", "Mercredi", "Vendredi"],
     bio: "Le Dr Ibrahima Kane accompagne ses patients dans le diagnostic et le traitement des affections cutanées avec un suivi attentif, des soins adaptés et un accompagnement personnalisé.",
-    photo: "/Dr%20Ibrahima%20kane.png",
+    photo: "/Dr%20Ibrahima%20Kane.png",
     initiales: "IK",
   },
   {
