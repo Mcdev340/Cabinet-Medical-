@@ -5,17 +5,15 @@ import IllustrationFrame from "@/components/ui/IllustrationFrame";
 import Reveal from "@/components/ui/Reveal";
 import { doctors } from "@/data/doctors";
 import { averageRating, reviews } from "@/data/reviews";
-import Avatar from "@/components/ui/Avatar";
 import { siteConfig } from "@/data/config";
 import { HeroConsultationIllustration } from "@/components/illustrations";
 
 export default function Hero() {
-  const featured = doctors[0];
 
   return (
     <section className="relative overflow-hidden py-8 sm:py-10 lg:py-12">
-      <div className="blob-accent animate-blob-drift pointer-events-none absolute -right-32 -top-24 h-[28rem] w-[28rem] rounded-full" />
-      <div className="blob-primary animate-blob-drift pointer-events-none absolute -left-40 bottom-0 h-[24rem] w-[24rem] rounded-full [animation-delay:2s]" />
+      <div className="blob-accent animate-blob-drift pointer-events-none absolute -right-32 -top-24 h-112 w-md rounded-full" />
+      <div className="blob-primary animate-blob-drift pointer-events-none absolute -left-40 bottom-0 h-96 w-[24rem] rounded-full [animation-delay:2s]" />
 
       <Container className="relative grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
         <div className="reveal-on-load flex flex-col items-start gap-6">
