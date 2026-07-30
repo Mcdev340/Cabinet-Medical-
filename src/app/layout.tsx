@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -6,7 +6,7 @@ import WhatsAppButton from "@/components/layout/WhatsAppButton";
 import { siteConfig } from "@/data/config";
 
 export const metadata: Metadata = {
-  title: `${siteConfig.cabinetNom} — Prenez rendez-vous en ligne`,
+  title: `${siteConfig.cabinetNom} â€” Prenez rendez-vous en ligne`,
   description: siteConfig.cabinetAccroche,
 };
 
